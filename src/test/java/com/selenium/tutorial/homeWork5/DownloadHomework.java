@@ -16,11 +16,11 @@ public class DownloadHomework {
         WebDriver driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/download");
 
-        List <WebElement> downloadAllFiles = driver.findElements(By.partialLinkText("download/"));
+        List <WebElement> downloadAllFiles = driver.findElements(By.partialLinkText("download"));
         for(WebElement c: downloadAllFiles){
             c.click();
-            Thread.sleep(6000);
-        }
+                   }
+        Thread.sleep(8000);
         driver.quit();
 
 
